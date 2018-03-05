@@ -1,0 +1,10 @@
+.list {
+  display: block;
+  width: 100%;
+  color: #000;
+}
+
+.list li {
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}

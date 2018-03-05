@@ -1,0 +1,45 @@
+.form-group {
+  margin-bottom: 15px;
+}
+
+.control-label {
+  display: block;
+  font-size: 12px;
+  color: #BFBFBF;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #E0E0E0;
+  background: #EEEEEE;
+  padding: 10px 15px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn {
+  transition: background 0.3s ease;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #001C3D;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #001C3C;
+}
+
+.help-block {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #BFBFBF;
+}
