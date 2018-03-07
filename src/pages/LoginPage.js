@@ -12,7 +12,10 @@ class LoginPage extends Component {
       <div className="form-container">
         <h1>Log In</h1>
         <Login onLoginSuccess={this.onLoginSuccess.bind(this)}/>
-        <p>Don't have an application account? <Link to="/signup">Sign Up</Link></p>
+        <div className="text-center">
+          <p>Don't have an application account? <Link to="/signup">Sign Up</Link></p>
+          <Link to="reset-password">Forgot password?</Link>
+        </div>
       </div>
     );
   }

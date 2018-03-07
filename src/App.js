@@ -7,6 +7,7 @@ import SignupPage from "./pages/SignupPage";
 import ScanPage from "./pages/ScanPage";
 import ScanDetailsPage from "./pages/ScanDetailsPage";
 import HomePage from "./pages/HomePage";
+import ResetPasswordPage from "./pages/ResetPasswordPage";
 import { userLogout } from "./actions/usersActions";
 import LoadingBar from "react-redux-loading-bar";
 import "./index.css";
@@ -47,6 +48,12 @@ class App extends Component {
           path="/signup"
           isAuthenticated={this.props.isAuthenticated}
           component={SignupPage}
+        />
+        <GuestRoute
+          exact
+          path="/reset-password"
+          isAuthenticated={this.props.isAuthenticated}
+          component={ResetPasswordPage}
         />
         <PrivateRoute
           exact

@@ -12,7 +12,10 @@ class SignupPage extends Component {
       <div className="form-container">
         <h1>Sign Up</h1>
         <Signup onUserCreateSuccess={this.onUserCreateSuccess.bind(this)} />
-        <p>Have an application account? <Link to="/login">Login</Link></p>
+        <div className="text-center">
+          <p>Have an application account? <Link to="/login">Login</Link></p>
+          <Link to="reset-password">Forgot password?</Link>
+        </div>
       </div>
     );
   }
