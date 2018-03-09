@@ -1,5 +1,4 @@
-Find demo [here](https://qr-scanner-d9dcd.firebaseapp.com) 
-
+Find demo [here](https://qr-scanner-d9dcd.firebaseapp.com)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 

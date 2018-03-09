@@ -8,7 +8,7 @@ class List extends Component {
     return (
       <React.Fragment>
         <ul className="list">
-          {items.length ? items.reverse().map((item, index) => <li key={index}>{item.scan}</li>) : 'loading list'}
+          {items.length && items.reverse().map((item, index) => <li key={index}>{item.scan}</li>)}
         </ul>  
       </React.Fragment>
     );

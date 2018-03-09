@@ -44,9 +44,7 @@ class SignupForm extends Component {
                 this.setState({ password: event.target.value })}
             />
           </div>
-          {this.props.errors ? (
-            <div className="form-group">{this.props.errors}</div>
-          ) : null}
+          {this.props.errors && (<div className="form-group">{this.props.errors}</div>)}
           <button type="submit" className="btn">
             Sign Up
           </button>

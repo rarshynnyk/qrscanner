@@ -43,7 +43,7 @@ class Scan extends Component {
           onScan={this.handleScan.bind(this)}
           className="scanner"
         />
-        <div>{this.state.errors ? <p>{this.state.errors.message}</p> : null}</div>
+        {this.state.errors && (<p>{this.state.errors.message}</p>)}
       </React.Fragment>
     );
   }
