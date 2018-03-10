@@ -1,0 +1,1 @@
+ export const SET_LOCALE_SUCCESS = "SET_LOCALE_SUCCESS";

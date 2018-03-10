@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
+import { FormattedMessage } from 'react-intl';
 
 class SignupForm extends Component {
   constructor() {
@@ -21,7 +22,7 @@ class SignupForm extends Component {
         <form onSubmit={this.onSubmit.bind(this)}>
           <div className="form-group">
             <label htmlFor="email" className="control-label">
-              Email
+              <FormattedMessage id="label.email" defaultMessage="Email" />
             </label>
             <input
               type="text"
@@ -33,7 +34,7 @@ class SignupForm extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="email" className="control-label">
-              Password
+              <FormattedMessage id="label.password" defaultMessage="Password" />
             </label>
             <input
               type="password"
@@ -46,7 +47,7 @@ class SignupForm extends Component {
           </div>
           {this.props.errors && (<div className="form-group">{this.props.errors}</div>)}
           <button type="submit" className="btn">
-            Sign Up
+            <FormattedMessage id="signup" defaultMessage="Sign Up" />
           </button>
         </form>
       </React.Fragment>

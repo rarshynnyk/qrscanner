@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
 import Signup from '../containers/Signup';
 
 class SignupPage extends Component {
@@ -13,8 +14,8 @@ class SignupPage extends Component {
         <h1>Sign Up</h1>
         <Signup onUserCreateSuccess={this.onUserCreateSuccess.bind(this)} />
         <div className="text-center">
-          <p>Have an application account? <Link to="/login">Login</Link></p>
-          <Link to="reset-password">Forgot password?</Link>
+          <p><FormattedMessage id="registered.message" defaultMessage="Have an application account?" /> <Link to="/login"><FormattedMessage id="login" defaultMessage="Login" /></Link></p>
+          <Link to="reset-password"><FormattedMessage id="forgotpassword.message" defaultMessage="Forgot password?" /></Link>
         </div>
       </div>
     );

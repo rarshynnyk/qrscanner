@@ -5,7 +5,7 @@ import List from '../components/List';
 
 class ScanList extends Component {
   componentDidMount() {
-    this.props.fetchScanList();
+    this.props.isAuthenticated && (this.props.fetchScanList());
   }
 
   render() {
@@ -19,7 +19,8 @@ class ScanList extends Component {
 
 function mapStateToProps(state) {
   return {
-    scanList: state.scan.scans
+    scanList: state.scan.scans,
+    isAuthenticated: state.users.user
   }
 }
 

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { FormattedMessage } from 'react-intl';
 import "./index.css";
 
 class ResetForm extends Component {
@@ -20,7 +21,7 @@ class ResetForm extends Component {
         <form onSubmit={this.onSubmit.bind(this)}>
           <div className="form-group">
             <label htmlFor="email" className="control-label">
-              Email
+              <FormattedMessage id="label.email" defaultMessage="Email" />
             </label>
             <input
               type="text"
@@ -32,7 +33,7 @@ class ResetForm extends Component {
           </div>
           {this.props.errors && (<div className="form-group">{this.props.errors}</div>)}
           <button type="submit" className="btn">
-            Send
+            <FormattedMessage id="label.send" defaultMessage="Send" />
           </button>
         </form>
       </React.Fragment>

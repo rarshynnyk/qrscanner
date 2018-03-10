@@ -1,0 +1,15 @@
+.lang-list {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.lang-list a {
+  display: block;
+  color: inherit;
+  padding: 10px;
+}
